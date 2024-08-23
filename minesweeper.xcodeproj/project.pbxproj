@@ -7,18 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D42603A62C77938000F8A840 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42603A52C77938000F8A840 /* GameManager.swift */; };
+		D42603A82C77A8F300F8A840 /* EndScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42603A72C77A8F300F8A840 /* EndScreen.swift */; };
+		D471E7BB2C7886CE008A7354 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = D471E7BA2C7886CE008A7354 /* ConfettiSwiftUI */; };
 		D48DEEC92C76374200D35FCC /* minesweeperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48DEEC82C76374200D35FCC /* minesweeperApp.swift */; };
-		D48DEECB2C76374200D35FCC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48DEECA2C76374200D35FCC /* ContentView.swift */; };
+		D48DEECB2C76374200D35FCC /* MenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48DEECA2C76374200D35FCC /* MenuScreen.swift */; };
 		D48DEECD2C76374300D35FCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48DEECC2C76374300D35FCC /* Assets.xcassets */; };
 		D48DEED02C76374300D35FCC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D48DEECF2C76374300D35FCC /* Preview Assets.xcassets */; };
+		D48DEEDF2C763D1D00D35FCC /* GameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48DEEDE2C763D1D00D35FCC /* GameScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D42603A52C77938000F8A840 /* GameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		D42603A72C77A8F300F8A840 /* EndScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScreen.swift; sourceTree = "<group>"; };
 		D48DEEC52C76374200D35FCC /* minesweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = minesweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D48DEEC82C76374200D35FCC /* minesweeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = minesweeperApp.swift; sourceTree = "<group>"; };
-		D48DEECA2C76374200D35FCC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D48DEECA2C76374200D35FCC /* MenuScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScreen.swift; sourceTree = "<group>"; };
 		D48DEECC2C76374300D35FCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D48DEECF2C76374300D35FCC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D48DEEDE2C763D1D00D35FCC /* GameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D471E7BB2C7886CE008A7354 /* ConfettiSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +59,11 @@
 		D48DEEC72C76374200D35FCC /* minesweeper */ = {
 			isa = PBXGroup;
 			children = (
+				D42603A52C77938000F8A840 /* GameManager.swift */,
+				D48DEECA2C76374200D35FCC /* MenuScreen.swift */,
+				D48DEEDE2C763D1D00D35FCC /* GameScreen.swift */,
+				D42603A72C77A8F300F8A840 /* EndScreen.swift */,
 				D48DEEC82C76374200D35FCC /* minesweeperApp.swift */,
-				D48DEECA2C76374200D35FCC /* ContentView.swift */,
 				D48DEECC2C76374300D35FCC /* Assets.xcassets */,
 				D48DEECE2C76374300D35FCC /* Preview Content */,
 			);
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = minesweeper;
+			packageProductDependencies = (
+				D471E7BA2C7886CE008A7354 /* ConfettiSwiftUI */,
+			);
 			productName = minesweeper;
 			productReference = D48DEEC52C76374200D35FCC /* minesweeper.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = D48DEEBC2C76374200D35FCC;
+			packageReferences = (
+				D471E7B92C7886CE008A7354 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+			);
 			productRefGroup = D48DEEC62C76374200D35FCC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,7 +154,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D48DEECB2C76374200D35FCC /* ContentView.swift in Sources */,
+				D48DEECB2C76374200D35FCC /* MenuScreen.swift in Sources */,
+				D42603A62C77938000F8A840 /* GameManager.swift in Sources */,
+				D48DEEDF2C763D1D00D35FCC /* GameScreen.swift in Sources */,
+				D42603A82C77A8F300F8A840 /* EndScreen.swift in Sources */,
 				D48DEEC92C76374200D35FCC /* minesweeperApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D471E7B92C7886CE008A7354 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D471E7BA2C7886CE008A7354 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D471E7B92C7886CE008A7354 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D48DEEBD2C76374200D35FCC /* Project object */;
 }
